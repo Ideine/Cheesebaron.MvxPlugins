@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1C07E597-6B45-4DAA-BDE5-A550542BD029}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -16,8 +14,8 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion />
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,7 +25,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +35,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -89,15 +85,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Settings\Cheesebaron.MvxPlugins.Settings.Droid\Cheesebaron.MvxPlugins.Settings.Droid.csproj">
-      <Project>{4456f80a-718a-479a-a2d9-f3f986fd82ac}</Project>
+      <Project>{4456F80A-718A-479A-A2D9-F3F986FD82AC}</Project>
       <Name>Cheesebaron.MvxPlugins.Settings.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Settings\Cheesebaron.MvxPlugins.Settings\Cheesebaron.MvxPlugins.Settings.csproj">
-      <Project>{baca1f45-5fb7-4bfb-b63a-c3abebe70a08}</Project>
+      <Project>{BACA1F45-5FB7-4BFB-B63A-C3ABEBE70A08}</Project>
       <Name>Cheesebaron.MvxPlugins.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\Settings.Sample.Core.csproj">
-      <Project>{8bed0a44-f366-49fc-a4cd-f9b812677ecb}</Project>
+      <Project>{8BED0A44-F366-49FC-A4CD-F9B812677ECB}</Project>
       <Name>Settings.Sample.Core</Name>
     </ProjectReference>
   </ItemGroup>

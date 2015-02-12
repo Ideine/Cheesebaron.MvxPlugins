@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A265035A-EB0C-4762-8252-3E8320A2AB85}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -14,8 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>
-    </AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -26,6 +22,7 @@
     <DefineConstants>TRACE;DEBUG;__APPCOMPAT__</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,6 +31,7 @@
     <DefineConstants>TRACE;__APPCOMPAT__</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -60,12 +58,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -78,15 +74,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AppCompatExtensions\CheeseyDroidExtensions\CheeseyDroidExtensions.csproj">
-      <Project>{3a01b788-e1a6-4fd9-b1fb-17ecdbbbe007}</Project>
+      <Project>{3A01B788-E1A6-4FD9-B1FB-17ECDBBBE007}</Project>
       <Name>CheeseyDroidExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\AppCompatExtensions\Droid.v7\AppCompatExtensions.Droid.v7.csproj">
-      <Project>{19a88115-1d6a-442b-8d70-15cf97cfba63}</Project>
+      <Project>{19A88115-1D6A-442B-8D70-15CF97CFBA63}</Project>
       <Name>AppCompatExtensions.Droid.v7</Name>
     </ProjectReference>
     <ProjectReference Include="..\AzureAccessControl.Core\AzureAccessControl.Core.csproj">
-      <Project>{70b42c5a-7f65-45ac-ab9a-0a4225f8f337}</Project>
+      <Project>{70B42C5A-7F65-45AC-AB9A-0A4225F8F337}</Project>
       <Name>AzureAccessControl.Core</Name>
     </ProjectReference>
   </ItemGroup>

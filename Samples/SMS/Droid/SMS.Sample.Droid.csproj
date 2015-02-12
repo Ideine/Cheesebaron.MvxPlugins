@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D4B05DF2-BDF6-414B-A633-13AD329EA283}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -19,11 +17,11 @@
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
-    <JavaMaximumHeapSize />
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
     <JavaOptions />
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>
-    </TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,7 +31,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -44,17 +41,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.CrossCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Cirrious.CrossCore.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.CrossCore.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Cirrious.MvvmCross">
       <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
@@ -73,6 +61,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid">
+      <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap\SMSPluginBootstrap.cs" />
@@ -94,15 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\SMS\Core\SMS.Core.csproj">
-      <Project>{5d7cc039-d2e9-455d-bf8f-6c510efa06b1}</Project>
+      <Project>{5D7CC039-D2E9-455D-BF8F-6C510EFA06B1}</Project>
       <Name>SMS.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\SMS\Droid\SMS.Droid.csproj">
-      <Project>{7412ebe1-49d3-44e0-b3a0-5db66d7e3f99}</Project>
+      <Project>{7412EBE1-49D3-44E0-B3A0-5DB66D7E3F99}</Project>
       <Name>SMS.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\SMS.Sample.Core.csproj">
-      <Project>{461a84f4-682c-4adb-8e2f-f34a8f0e0bca}</Project>
+      <Project>{461A84F4-682C-4ADB-8E2F-F34A8F0E0BCA}</Project>
       <Name>SMS.Sample.Core</Name>
     </ProjectReference>
   </ItemGroup>

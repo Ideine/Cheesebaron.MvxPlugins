@@ -49,20 +49,17 @@
     </Reference>
     <Reference Include="System.Net.Http">
       <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.Extensions">
       <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\..\..\packages\Microsoft.Net.Http.2.2.28\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
-      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\ModernHttpClient\Core\ModernHttpClient.Core.csproj">
-      <Project>{fa15c468-bf0b-4197-9602-3b49dcb53699}</Project>
+      <Project>{FA15C468-BF0B-4197-9602-3B49DCB53699}</Project>
       <Name>ModernHttpClient.Core</Name>
     </ProjectReference>
   </ItemGroup>

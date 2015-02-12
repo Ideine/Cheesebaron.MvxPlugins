@@ -20,7 +20,7 @@ namespace FormsPresenters.Sample.Pages
 
             var label = new Label
             {
-                Text = "Hello, Xamarin.Forms with MVVMCross!"
+                Text = "Hello, Xamarin.Forms with MvvmCross!"
             };
 
             content.Children.Add(label);

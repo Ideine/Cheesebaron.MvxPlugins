@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{53C7BBF1-62DB-45D1-B185-4634B10DFA17}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -15,8 +13,6 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>
-    </AndroidUseLatestPlatformSdk>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
@@ -33,7 +29,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -44,7 +39,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -74,10 +68,6 @@
     <Reference Include="Cirrious.MvvmCross.Plugins.Visibility.Droid">
       <HintPath>..\..\..\submodules\MvvmCross\bin\Debug\Mvx\Droid\Cirrious.MvvmCross.Plugins.Visibility.Droid.dll</HintPath>
     </Reference>
-    <Reference Include="GooglePlayServicesLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Xamarin.GooglePlayServices.22.0.0.0\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -87,16 +77,16 @@
     <Reference Include="Xamarin.Android.Support.v13">
       <HintPath>..\..\..\packages\Xamarin.Android.Support.v13.21.0.3.0\lib\MonoAndroid32\Xamarin.Android.Support.v13.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\..\..\packages\Xamarin.GooglePlayServices.22.0.0.0\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\..\..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\..\..\packages\Xamarin.Android.Support.v7.AppCompat.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.MediaRouter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
       <HintPath>..\..\..\packages\Xamarin.Android.Support.v7.MediaRouter.21.0.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -128,23 +118,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Notifications\Core\Notifications.Core.csproj">
-      <Project>{93746045-7e0e-4ef9-a706-de84f2f54e7c}</Project>
+      <Project>{93746045-7E0E-4EF9-A706-DE84F2F54E7C}</Project>
       <Name>Notifications.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Notifications\Droid\Notifications.Droid.csproj">
-      <Project>{096800f7-3554-4310-b8cb-ac21c1670b76}</Project>
+      <Project>{096800F7-3554-4310-B8CB-AC21C1670B76}</Project>
       <Name>Notifications.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Settings\Cheesebaron.MvxPlugins.Settings.Droid\Cheesebaron.MvxPlugins.Settings.Droid.csproj">
-      <Project>{4456f80a-718a-479a-a2d9-f3f986fd82ac}</Project>
+      <Project>{4456F80A-718A-479A-A2D9-F3F986FD82AC}</Project>
       <Name>Cheesebaron.MvxPlugins.Settings.Droid</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Settings\Cheesebaron.MvxPlugins.Settings\Cheesebaron.MvxPlugins.Settings.csproj">
-      <Project>{baca1f45-5fb7-4bfb-b63a-c3abebe70a08}</Project>
+      <Project>{BACA1F45-5FB7-4BFB-B63A-C3ABEBE70A08}</Project>
       <Name>Cheesebaron.MvxPlugins.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\Core\Notifications.Sample.Core.csproj">
-      <Project>{0845a91c-b5b4-4b5f-a668-a37d914af167}</Project>
+      <Project>{0845A91C-B5B4-4B5F-A668-A37D914AF167}</Project>
       <Name>Notifications.Sample.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -35,7 +35,7 @@
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <ProjectReference Include="..\..\..\SMS\Core\SMS.Core.csproj">
-      <Project>{5d7cc039-d2e9-455d-bf8f-6c510efa06b1}</Project>
+      <Project>{5D7CC039-D2E9-455D-BF8F-6C510EFA06B1}</Project>
       <Name>SMS.Core</Name>
     </ProjectReference>
   </ItemGroup>

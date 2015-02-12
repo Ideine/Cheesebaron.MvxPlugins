@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cheesebaron.MvxPlugins.SimpleWebToken\Cheesebaron.MvxPlugins.SimpleWebToken.csproj">
-      <Project>{8bd5a2ea-bef2-4237-b7bd-f07742c5171c}</Project>
+      <Project>{8BD5A2EA-BEF2-4237-B7BD-F07742C5171C}</Project>
       <Name>Cheesebaron.MvxPlugins.SimpleWebToken</Name>
     </ProjectReference>
   </ItemGroup>

@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3EF16344-217D-4A0E-BDFC-9E11C13FB224}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -14,7 +12,6 @@
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk />
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -25,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -83,23 +82,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AppCompatExtensions\CheeseyDroidExtensions\CheeseyDroidExtensions.csproj">
-      <Project>{3a01b788-e1a6-4fd9-b1fb-17ecdbbbe007}</Project>
+      <Project>{3A01B788-E1A6-4FD9-B1FB-17ECDBBBE007}</Project>
       <Name>CheeseyDroidExtensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\AppCompatExtensions\Droid.v4\AppCompatExtensions.Droid.v4.csproj">
-      <Project>{ad0c8f18-0648-4acb-8830-fdf8790840bc}</Project>
+      <Project>{AD0C8F18-0648-4ACB-8830-FDF8790840BC}</Project>
       <Name>AppCompatExtensions.Droid.v4</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Settings\Cheesebaron.MvxPlugins.Settings\Cheesebaron.MvxPlugins.Settings.csproj">
-      <Project>{baca1f45-5fb7-4bfb-b63a-c3abebe70a08}</Project>
+      <Project>{BACA1F45-5FB7-4BFB-B63A-C3ABEBE70A08}</Project>
       <Name>Cheesebaron.MvxPlugins.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SimpleWebToken\Cheesebaron.MvxPlugins.SimpleWebToken\Cheesebaron.MvxPlugins.SimpleWebToken.csproj">
-      <Project>{8bd5a2ea-bef2-4237-b7bd-f07742c5171c}</Project>
+      <Project>{8BD5A2EA-BEF2-4237-B7BD-F07742C5171C}</Project>
       <Name>Cheesebaron.MvxPlugins.SimpleWebToken</Name>
     </ProjectReference>
     <ProjectReference Include="..\AzureAccessControl.Core\AzureAccessControl.Core.csproj">
-      <Project>{70b42c5a-7f65-45ac-ab9a-0a4225f8f337}</Project>
+      <Project>{70B42C5A-7F65-45AC-AB9A-0A4225F8F337}</Project>
       <Name>AzureAccessControl.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -39,11 +39,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\AzureAccessControl\AzureAccessControl.Core\AzureAccessControl.Core.csproj">
-      <Project>{70b42c5a-7f65-45ac-ab9a-0a4225f8f337}</Project>
+      <Project>{70B42C5A-7F65-45AC-AB9A-0A4225F8F337}</Project>
       <Name>AzureAccessControl.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\SimpleWebToken\Cheesebaron.MvxPlugins.SimpleWebToken\Cheesebaron.MvxPlugins.SimpleWebToken.csproj">
-      <Project>{8bd5a2ea-bef2-4237-b7bd-f07742c5171c}</Project>
+      <Project>{8BD5A2EA-BEF2-4237-B7BD-F07742C5171C}</Project>
       <Name>Cheesebaron.MvxPlugins.SimpleWebToken</Name>
     </ProjectReference>
   </ItemGroup>
