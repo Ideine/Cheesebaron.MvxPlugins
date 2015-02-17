@@ -36,7 +36,7 @@ namespace FormsPresenters.Sample.WinPhone
 
             var xamarinFormsApp = new XamarinFormsApp();
 
-            return new MvxFormsWindowsPhonePagePresenter(xamarinFormsApp, rootFrame);
+            return new MvxFormsWindowsPhonePagePresenter(rootFrame, xamarinFormsApp);
         }
     }
 }
